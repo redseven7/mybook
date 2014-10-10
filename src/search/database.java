@@ -1,7 +1,7 @@
 package search;
 import java.util.ArrayList;
 import java.util.List;
-
+//ffffffffffffffff
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,7 +16,7 @@ public class database {
 	private static PreparedStatement stmt;
 	private static ResultSet rs;
 	
-	//Ìí¼ÓÍ¼Êé¹ı³Ì
+	//æ·»åŠ å›¾ä¹¦è¿‡ç¨‹
 	public static boolean addInfo(book book){
 		
 	    boolean flag=false;
@@ -36,7 +36,7 @@ public class database {
 		DBConnection.Close(con, stmt);
 		return flag;
     }
-	//ÏÔÊ¾Í¼ÊéÏêÇéÊ±Ê¹ÓÃµÄ²éÑ¯¹ı³Ì
+	//æ˜¾ç¤ºå›¾ä¹¦è¯¦æƒ…æ—¶ä½¿ç”¨çš„æŸ¥è¯¢è¿‡ç¨‹
 	public static book QueryInfo(String title){
 		book book = new book();
 	    ResultSet rs=null;
@@ -62,7 +62,7 @@ public class database {
 		DBConnection.Close(con, stmt);
 		return book;
 	}
-	//×÷ÕßÃû²éÑ¯ÏÔÊ¾ÊéÃû±í¹ı³Ì
+	//ä½œè€…åæŸ¥è¯¢æ˜¾ç¤ºä¹¦åè¡¨è¿‡ç¨‹
 	public static List QueryBooks(String authorid){
 		List list=new ArrayList();
 	    ResultSet rs=null;
@@ -91,7 +91,7 @@ public class database {
 		return list;
 	}
 	
-	//×÷ÕßÃû²éÑ¯Ê±°´Ãû²éÑ¯¹ı³Ì
+	//ä½œè€…åæŸ¥è¯¢æ—¶æŒ‰åæŸ¥è¯¢è¿‡ç¨‹
 	public static author QueryName(String name){
 		author bookname = new author();
 	    ResultSet rs=null;
@@ -115,7 +115,7 @@ public class database {
 		DBConnection.Close(con, stmt);
 		return bookname;
 	}
-	//É¾³ıÍ¼Êé¹ı³Ì
+	//åˆ é™¤å›¾ä¹¦è¿‡ç¨‹
 	public static boolean deleteInfo(String title){
 		boolean flag=false;
 		try{
