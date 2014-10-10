@@ -1,5 +1,5 @@
 package search;
-
+//llllllllllllllll
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,7 +41,7 @@ public class addbook extends HttpServlet {
 		book.setPrice(request.getParameter("price").trim());
 		if(database.addInfo(book)){
 
-			request.setAttribute("message", "ÊéÃûÎª"+book.getTitle()+"Í¼ÊéĞÅÏ¢Ìí¼Ó³É¹¦£¡");
+			request.setAttribute("message", "ä¹¦åä¸º"+book.getTitle()+"å›¾ä¹¦ä¿¡æ¯æ·»åŠ æˆåŠŸï¼");
 		}
 		RequestDispatcher rd=request.getRequestDispatcher(url);
 		rd.forward(request, response);
