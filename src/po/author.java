@@ -1,5 +1,5 @@
 package po;
-//++++++
+
 public class author {
 		private String authorid;
 		private String name;
